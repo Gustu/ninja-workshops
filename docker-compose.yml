@@ -1,6 +1,6 @@
 server:
   image: node:6
-  command: npm start
+  command: npm run watch
   working_dir: /app/server
   volumes:
     - ./server:/app/server
