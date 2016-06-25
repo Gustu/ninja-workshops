@@ -10,7 +10,7 @@ server:
   ports:
     - "3000:3000"
     - "5858:5858"
-  link:
+  links:
     - db
 db:
   image: postgres
