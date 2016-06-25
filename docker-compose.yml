@@ -6,6 +6,17 @@ server:
     - ./server:/app/server
   environment:
     PORT: 3000
+    CONNECTION_STRING: postgres://user:password@db/db
   ports:
     - "3000:3000"
     - "5858:5858"
+  link:
+    - db
+db:
+  image: postgres
+  expose:
+    - 5437
+  environment:
+    POSTGRES_PASSWORD: password
+    POSTGRES_USER: user
+    POSTGRES_DB: db
