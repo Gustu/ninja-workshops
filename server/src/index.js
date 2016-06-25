@@ -1,6 +1,8 @@
 const app = require('express')();
-
-app.get('/', function (req, res) {
+const router = require('./modules/router');
+app
+  .use(router)
+  .get('/', function (req, res) {
   res.json({succes: true});
 });
 
