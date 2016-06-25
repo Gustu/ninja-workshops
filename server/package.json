@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "watch": "nodemon -L --debug=5858 index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/index.js",
+    "watch": "nodemon -L --debug=5858 bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1" 
   },
   "keywords": [],
   "author": "",
