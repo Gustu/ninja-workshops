@@ -25,6 +25,7 @@
     "sinon": "^1.17.4"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "winston": "^2.2.0"
   }
