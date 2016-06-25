@@ -4,3 +4,6 @@ server:
   working_dir: /app/server
   volumes:
     - ./server:/app/server
+  ports:
+    - "3000:3000"
+    - "5858:5858"
